@@ -7,6 +7,7 @@
     <title>Fundamentos JavaScript</title>
 </head>
 <body>
+    <h1>Fundamentos en JavaScript</h1>
     <script>
         //Tipos de operadores
         /*
@@ -39,6 +40,7 @@
 
         
         */
+        /*
         let hora = 3;
         if (hora >= 6 && hora <= 11){
             console.log("Buenos dias");
@@ -53,12 +55,80 @@
                 console.log("No has introducido una hora correcta");
             }
         }
-
+*/
         /*Operador ternario (condicion)?verdadero:falso*/
-        console.log("operador ternario");
+        /*console.log("operador ternario");
         let edad = 16;
         let eresMayor = (edad >= 18)?"Eres mayor de edad": "eres menor de edad";
-        console.log(eresMayor);
+        console.log(eresMayor);*/
+/*
+        let contador = 0;
+        while (contador < 10) {
+            console.log("while" + contador);
+            contador ++;
+            
+        }*/
+/*
+        do {
+            console.log("Do while" + contador);
+            contador ++;
+        } while(contador < 10);
+*/
+
+/*
+
+for (let i = 0; i < 10; i++) { 
+    console.log("for "  + i);
+}
+
+const colores = ["rojo", "amarillo", "verde", "azul", "morado", "marrón"];
+
+for (let i = 0; i < colores.length; i ++) {
+    console.log(colores[i]);
+}
+
+const daniel = {
+    nombre:"Daniel",
+    apellido: "Adrian",
+    edad: 31
+}
+for (const propiedad in daniel){
+    console.log(`Key: ${propiedad}, Value: ${daniel [propiedad]}`);
+} //For in nos ayuda a recorrer objetos
+
+//for of podemos recorrer todos los eementos de cualquier objeto que sea iterable, por ejemplo un arreglo
+
+for (const elemento of colores) {
+    console.log(elemento)
+}
+
+let cadena = "Hola mundo";
+
+for (const elemento of cadena) {
+    console.log(elemento)
+}
+*/
+
+try {
+    console.log("En el try se agrega el codigo a evaluar")
+    noexiste;
+} catch (error) {
+    console.log("Cualquier error surgido o lanzado en el try")
+    console.log(error);
+} finally {
+    console.log("El bloque finally se ejecutará siempre al final de un bloque trycatch")
+}
+
+try {
+    let numero = 12;
+    if (isNaN(numero)){
+        throw new Error("El caracter introducido no es un numero")
+    }
+    console.log(numero * numero);
+} catch (error) {
+    console.log(`Se produjo el siguiente error: ${(error)}`);
+    
+}
 
 
     </script>
